@@ -1,0 +1,6 @@
+@use "../Styles/Partials/resets";
+@use "../Styles/Partials/variables" as *;
+
+.App {
+  background: $blue;
+}

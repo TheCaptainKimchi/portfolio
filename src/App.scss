@@ -1,5 +1,6 @@
-@use "../Styles/Partials/resets";
-@use "../Styles/Partials/variables" as *;
+@use "./Styles/Partials/_resets";
+@use "./Styles/Partials/_variables" as *;
+@use "./Styles/Partials/breakpoints" as *;
 
 .App {
   background: $blue;

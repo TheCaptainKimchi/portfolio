@@ -1,0 +1,94 @@
+@use "../../Styles/Partials/variables" as *;
+
+.connect-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: flex-start;
+  background: black;
+  border: 1px solid $green;
+  border-radius: 10px;
+  padding: 2rem;
+  &__name,
+  &__email {
+    display: flex;
+    margin-bottom: 1rem;
+    &-label {
+      display: flex;
+      width: 4rem;
+      margin-right: 1rem;
+      color: $green;
+    }
+    &-input {
+      width: 10rem;
+      border: 0;
+      border-radius: 5px;
+      padding: 0.25rem;
+      color: $green;
+      background: transparent;
+      border: 1px solid $green;
+    }
+  }
+  &__message {
+    display: flex;
+    margin-bottom: 1rem;
+    &-label {
+      width: 4rem;
+      margin-right: 1rem;
+      color: $green;
+    }
+    &-input {
+      padding: 0.25rem;
+      border-radius: 5px;
+      width: 10rem;
+      height: 10rem;
+      max-height: 15rem;
+      min-height: 10rem;
+      max-width: 12rem;
+      min-width: 10rem;
+      border: 0;
+      color: $green;
+      background: transparent;
+      border: 1px solid $green;
+    }
+  }
+  &__error {
+    color: red;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  &__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &-active {
+      border: 1px solid $green;
+      display: flex;
+      background: transparent;
+      border-radius: 10px;
+      padding: 0.25rem 0.75rem;
+      color: $green;
+    }
+    &-active:hover {
+      transform: scale(1.1);
+    }
+    &-text {
+      width: 5rem;
+      color: $green;
+    }
+    &-icon {
+      width: 1.5rem;
+    }
+    &-inactive {
+      display: none;
+    }
+  }
+}

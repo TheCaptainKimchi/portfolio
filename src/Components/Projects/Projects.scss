@@ -1,0 +1,62 @@
+@use "../../Styles/Partials/variables" as *;
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  border-top: 1px solid $green;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &-line {
+      width: 5rem;
+      height: 1px;
+      background-color: $green;
+    }
+    &-title {
+      padding: 0 1rem;
+      color: $white;
+    }
+  }
+  &__samples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.card {
+  width: 20rem;
+  height: 12rem;
+  border-radius: 15px;
+  text-align: center;
+  background: $dark-grey;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    padding-bottom: 0.75rem;
+    color: $green;
+  }
+  a {
+    button {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 10px;
+      padding: 0.25rem 0.75rem;
+      border: 1px solid $green;
+      background: black;
+      color: $green;
+    }
+  }
+}

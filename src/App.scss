@@ -5,3 +5,20 @@
 .App {
   background: $blue;
 }
+
+@include tablet {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3,
+  li {
+    font-size: 1.5rem;
+  }
+  p,
+  button,
+  input,
+  textarea {
+    font-size: 1.25rem;
+  }
+}

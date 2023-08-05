@@ -9,7 +9,7 @@ const Hero = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iste
         quae facilis neque quod, laborum voluptas praesentium officiis eaque ut!
       </p>
-      <a className="hero__button">
+      <a className="hero__button" href="/">
         <button>Check Out My Github!</button>
       </a>
     </div>

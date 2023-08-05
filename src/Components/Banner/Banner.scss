@@ -1,11 +1,10 @@
 @use "../../Styles/Partials/variables" as *;
+@use "../../Styles/Partials/breakpoints" as *;
 
 .banner {
-  display: flex;
-  &__react {
-    width: 3.5rem;
-  }
-  &__js {
-    width: 5rem;
-  }
+  padding: 1rem 0;
+}
+
+img {
+  width: 5rem;
 }

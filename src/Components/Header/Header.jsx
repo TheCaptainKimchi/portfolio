@@ -24,7 +24,7 @@ const Header = () => {
 
       <menu className={`menu ${isMenuActive ? "menu-active" : ""}`}>
         <button className="menu-active__x" onClick={toggleMenu}>
-          <img className="menu-active__x-icon" src={X}></img>
+          <img className="menu-active__x-icon" alt="x-icon" src={X}></img>
         </button>
         <ul className="menu-active__list">
           <a

@@ -17,6 +17,7 @@
   &__button {
     display: flex;
     width: 10rem;
+    text-decoration: none;
     button {
       background: transparent;
       border: 1px solid $green;

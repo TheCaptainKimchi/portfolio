@@ -24,19 +24,19 @@ export const ContactUs = () => {
       !form.current[0].value
     ) {
       setErrorMessage("Please fill out all form fields!");
+    } else {
+      setFormButton("form__submit-inactive");
+      setFormSubmitted("form__submit-active");
+
+      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     }
-
-    setFormButton("form__submit-inactive");
-    setFormSubmitted("form__submit-active");
-
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
   };
 
   return (

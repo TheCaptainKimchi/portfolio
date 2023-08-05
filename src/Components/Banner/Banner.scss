@@ -1,0 +1,11 @@
+@use "../../Styles/Partials/variables" as *;
+
+.banner {
+  display: flex;
+  &__react {
+    width: 3.5rem;
+  }
+  &__js {
+    width: 5rem;
+  }
+}

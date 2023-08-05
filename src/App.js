@@ -4,6 +4,7 @@ import Hero from "./Components/Hero/Hero";
 import Banner from "./Components/Banner/Banner";
 import Projects from "./Components/Projects/Projects";
 import Connect from "./Components/Connect/Connect";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <Projects />
       <Connect />
+      <Footer />
     </div>
   );
 }

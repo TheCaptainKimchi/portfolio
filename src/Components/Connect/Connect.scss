@@ -110,6 +110,13 @@
   }
   @include tablet {
     width: 40rem;
+    &__name,
+    &__email,
+    &-message {
+      &-label {
+        font-size: 1.5rem;
+      }
+    }
   }
   @include desktop {
     width: 50rem;

@@ -4,7 +4,21 @@
   font-family: "purista", "Sans-serif";
 }
 
+::-webkit-scrollbar {
+  display: flex;
+  width: 5px;
+  background-color: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 body,
 html {
   box-sizing: border-box;
+  margin: 0;
+  overflow-y: scroll;
+}
+body {
+  overflow: hidden;
 }

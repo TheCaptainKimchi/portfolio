@@ -1,9 +1,23 @@
 @use "../../Styles/Partials/variables" as *;
+@use "../../Styles/Partials/breakpoints" as *;
 
 .connect-container {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 5rem 1rem 3rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.title {
+  color: $green;
+  margin-bottom: 0.5rem;
+  @include desktop {
+    margin-right: 5rem;
+  }
 }
 
 .form {
@@ -19,14 +33,16 @@
   &__email {
     display: flex;
     margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
     &-label {
       display: flex;
-      width: 4rem;
+      width: 20%;
       margin-right: 1rem;
       color: $green;
     }
     &-input {
-      width: 10rem;
+      width: 80%;
       border: 0;
       border-radius: 5px;
       padding: 0.25rem;
@@ -38,20 +54,21 @@
   &__message {
     display: flex;
     margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
     &-label {
-      width: 4rem;
+      width: 20%;
       margin-right: 1rem;
       color: $green;
     }
     &-input {
       padding: 0.25rem;
       border-radius: 5px;
-      width: 10rem;
       height: 10rem;
       max-height: 15rem;
       min-height: 10rem;
-      max-width: 12rem;
-      min-width: 10rem;
+      max-width: 77%;
+      min-width: 77%;
       border: 0;
       color: $green;
       background: transparent;
@@ -90,5 +107,14 @@
     &-inactive {
       display: none;
     }
+  }
+  @include tablet {
+    width: 40rem;
+  }
+  @include desktop {
+    width: 50rem;
+    height: 20rem;
+    justify-content: center;
+    padding: 5rem 3rem;
   }
 }

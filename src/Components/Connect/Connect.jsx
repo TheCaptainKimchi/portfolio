@@ -41,6 +41,7 @@ export const ContactUs = () => {
 
   return (
     <div className="connect-container">
+      <h2 className="title">Connect With Me!</h2>
       <form ref={form} onSubmit={sendEmail} className="form">
         <div className="form__name">
           <label className="form__name-label">Name</label>

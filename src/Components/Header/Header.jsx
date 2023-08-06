@@ -49,6 +49,29 @@ const Header = () => {
           </a>
         </ul>
       </menu>
+
+      <nav className="header__nav-desktop">
+        <ul className="header__nav-desktop-list">
+          <a
+            className="header__nav-desktop-list-item header__nav-desktop-list-item--1"
+            href="/"
+          >
+            <li>About</li>
+          </a>
+          <a
+            className="header__nav-desktop-list-item header__nav-desktop-list-item--2"
+            href="/"
+          >
+            <li>Projects</li>
+          </a>
+          <a
+            className="header__nav-desktop-list-item header__nav-desktop-list-item--3"
+            href="/"
+          >
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
     </header>
   );
 };

@@ -7,10 +7,11 @@
 ::-webkit-scrollbar {
   display: flex;
   width: 5px;
-  background-color: #0a192f;
+  background-color: black;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #8888887f;
+  border-radius: 10px;
 }
 
 body,

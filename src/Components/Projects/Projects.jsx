@@ -10,7 +10,7 @@ const Projects = () => {
       </div>
       <div className="projects__samples">
         <div className="projects__samples-featured">
-          <div className="projects__samples-featured-info card">
+          <div className="projects__samples-featured-info card card--1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <a href="/">
               <button>Visit Project</button>
@@ -18,19 +18,19 @@ const Projects = () => {
           </div>
         </div>
         <div className="projects__samples-list">
-          <div className="projects__samples-list-info projects__samples-list-info--1 card">
+          <div className="projects__samples-list-info card card--2">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <a href="/">
               <button>Visit Project</button>
             </a>
           </div>
-          <div className="projects__samples-list-info projects__samples-list-info--2 card">
+          <div className="projects__samples-list-info card card--3">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <a href="/">
               <button>Visit Project</button>
             </a>
           </div>
-          <div className="projects__samples-list-info projects__samples-list-info--3 card">
+          <div className="projects__samples-list-info card card--4">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <a href="/">
               <button>Visit Project</button>

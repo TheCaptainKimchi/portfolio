@@ -65,12 +65,16 @@
   height: 12rem;
   border-radius: 15px;
   text-align: center;
-  background: $dark-grey;
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  p,
+  a {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
   p {
     padding-bottom: 0.75rem;
     color: $green;
@@ -87,6 +91,26 @@
       color: $green;
     }
   }
+  &--1 {
+    background: url("../../Assets/Images/solution.png");
+    background-position: center;
+    background-size: cover;
+  }
+  &--2 {
+    background: url("../../Assets/Images/report.png");
+    background-position: center;
+    background-size: cover;
+  }
+  &--3 {
+    background: url("https://picsum.photos/1920/1080?random=1");
+    background-position: center;
+    background-size: cover;
+  }
+  &--4 {
+    background: url("https://picsum.photos/1920/1080?random=2");
+    background-position: center;
+    background-size: cover;
+  }
   @include tablet {
     width: 40rem;
     height: 20rem;
@@ -95,12 +119,9 @@
     width: 22rem;
     height: 25rem;
     margin: 1rem 0.5rem;
-    p,
-    a {
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
+    transition: 0.5s ease-in-out;
     &:hover {
+      background: $dark-grey;
       p,
       a {
         opacity: 1;

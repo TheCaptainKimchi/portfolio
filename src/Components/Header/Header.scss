@@ -39,47 +39,58 @@
 
 .menu {
   display: none;
-}
-.menu-active {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  width: 50vw;
-  background: $dark-grey;
-  animation: slideInRight 0.3s ease-in-out;
-  z-index: 999;
-  &__x {
-    background: transparent;
-    border: 0;
-    &-icon {
-      margin: 0.75rem 0.75rem 0 0;
-      width: 35px;
-    }
-  }
-  &__list {
-    width: 100%;
+  /* Add the slideOutRight animation to the menu class */
+  animation: slideOutRight 0.3s ease-in-out;
+
+  &-active {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    margin-top: 1rem;
-    &-item {
-      text-decoration: none;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    background: $dark-grey;
+    border-left: 1px solid white;
+    /* Add the slideInRight animation to the menu-active state */
+    animation: slideInRight 0.3s ease-in-out;
+    z-index: 999;
+
+    &__x {
+      background: transparent;
+      border: 0;
+
+      &-icon {
+        margin: 0.75rem 0.75rem 0 0;
+        width: 35px;
+      }
+    }
+
+    &__list {
+      width: 100%;
       display: flex;
-      justify-content: flex-start;
-      margin-left: 1rem;
-      margin-bottom: 0.5rem;
-      li {
-        color: $green;
-        font-weight: 600;
+      flex-direction: column;
+      list-style: none;
+      margin-top: 1rem;
+
+      &-item {
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        li {
+          color: $green;
+          font-weight: 600;
+        }
       }
     }
   }
 }
 
+/* Existing keyframe animations */
 @keyframes slideInRight {
   from {
     transform: translateX(100%);

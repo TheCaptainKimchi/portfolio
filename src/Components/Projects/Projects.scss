@@ -112,6 +112,16 @@
     background-position: center;
     background-size: cover;
   }
+  &:hover {
+    background: $dark-grey;
+    p,
+    a {
+      opacity: 1;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
   @include tablet {
     width: 40rem;
     height: 20rem;
@@ -121,15 +131,5 @@
     height: 25rem;
     margin: 1rem 0.5rem;
     transition: 0.5s ease-in-out;
-    &:hover {
-      background: $dark-grey;
-      p,
-      a {
-        opacity: 1;
-      }
-      a {
-        text-decoration: none;
-      }
-    }
   }
 }

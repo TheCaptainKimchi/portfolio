@@ -29,21 +29,21 @@ const Header = () => {
         <ul className="menu-active__list">
           <a
             className="menu-active__list-item menu-active__list-item--about"
-            href="/"
+            href="#about"
           >
             <li>About</li>
           </a>
 
           <a
             className="menu-active__list-item menu-active__list-item--projects"
-            href="/"
+            href="#projects"
           >
             <li>Project</li>
           </a>
 
           <a
             className="menu-active__list-item menu-active__list-item--contact"
-            href="/"
+            href="#contact"
           >
             <li>Contact</li>
           </a>
@@ -54,19 +54,19 @@ const Header = () => {
         <ul className="header__nav-desktop-list">
           <a
             className="header__nav-desktop-list-item header__nav-desktop-list-item--1"
-            href="/"
+            href="#about"
           >
             <li>About</li>
           </a>
           <a
             className="header__nav-desktop-list-item header__nav-desktop-list-item--2"
-            href="/"
+            href="#projects"
           >
             <li>Projects</li>
           </a>
           <a
             className="header__nav-desktop-list-item header__nav-desktop-list-item--3"
-            href="/"
+            href="#contact"
           >
             <li>Contact</li>
           </a>

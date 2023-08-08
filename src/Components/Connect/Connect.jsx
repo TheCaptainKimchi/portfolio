@@ -40,7 +40,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="connect-container">
+    <div className="connect-container" id="contact">
       <h2 className="title">Connect With Me!</h2>
       <form ref={form} onSubmit={sendEmail} className="form">
         <div className="form__name">
